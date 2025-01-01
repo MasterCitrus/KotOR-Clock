@@ -1,3 +1,63 @@
-<svg>
-  <rect id="background" />
+<svg viewport-fill="black">
+  <defs>
+    <symbol id="button">
+      <image href="ButtonBorder.png" id="border" x="0" y="0" width="48" height="48"  fill="inherit" />
+      <image href="" id="icon" x="0" y="0" width="48" height="48" fill="inherit" />
+      <rect id="toucharea" x="0" y="0" width="48" height="48" opacity="0" pointer-events="visible" />
+    </symbol>
+  </defs>
+  
+  <!-- KotOR 1 Theme -->
+  <svg class="K1" x="0" y="0" width="100%" height="100">
+  </svg>
+  <!-- KotOR 2 Theme -->
+  <svg class="K2" x="0" y="0" width="100%" height="100">
+    <section id="topbar" x="0" y="0" width="100%" height="105">
+      <image href="TitleBar.png" class="titleimage" x="31" y="24" width="120" height="48" />
+      <use href="#fitfont" id="titleText">
+        <use href="#fitfont-char"/>
+        <use href="#fitfont-char"/>
+        <use href="#fitfont-char"/>
+        <use href="#fitfont-char"/>
+        <use href="#fitfont-char"/>
+      </use>
+      <use href="#fitfont" id="batteryText">
+        <use href="#fitfont-char"/>
+        <use href="#fitfont-char"/>
+        <use href="#fitfont-char"/>
+        <use href="#fitfont-char"/>
+      </use>
+      <use id="characterButton" href="#button" x="156" y="24" width="48" height="48">
+        <set href="border" attributeName="fill" to="#1AB28C" />
+        <set href="icon" attributeName="fill" to="#1AB28C" attributeName="href" to="CharacterIcon.png" />
+      </use>
+      <use id="clockButton" href="#button" x="207" y="24" width="48" height="48">
+        <set href="border" attributeName="fill" to="#1AB28C" />
+        <set href="icon" attributeName="fill" to="#1AB28C" attributeName="href" to="ClockIcon.png" />
+      </use>
+      <use id="somethingButton" href="#button" x="258" y="24" width="48" height="48">
+        <set href="border" attributeName="fill" to="#1AB28C" />
+        <set href="icon" attributeName="fill" to="#1AB28C" attributeName="href" to="ClockIcon.png" />
+      </use>
+      <image href="DividerK2.png" class="k2divider" x="0" y="76" width="100%" height="24" />
+    </section>
+    <!-- Stats Screen -->
+    <svg id="statsscreen" x="0" y="106" width="100%" height="230">
+      <image href="StatsPanelK2.png" class="statspanel" x="25" y="0" width="286" height="204" />
+    </svg>
+    <!-- Clock Screen -->
+    <svg id="clockscreen" x="0" y="106" width="100%" height="230">
+      <use href="#fitfont" id="time">
+        <use href="#fitfont-char"/>
+        <use href="#fitfont-char"/>
+        <use href="#fitfont-char"/>
+        <use href="#fitfont-char"/>
+        <use href="#fitfont-char"/>
+        <use href="#fitfont-char"/>
+      </use>
+    </svg>
+    <!-- Some Screen -->
+    <svg id="somescreen" x="0" y="106" width="100%" height="230">
+    </svg>
+  </svg>
 </svg>
